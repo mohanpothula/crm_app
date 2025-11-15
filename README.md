@@ -16,7 +16,7 @@ This automatically creates contacts.db if it does not exist.
 
 Visit:
 
-http://localhost:8000/docs
+http://localhost or public ip:8000/docs
 
 
 **Implemented Endpoints**
