@@ -31,10 +31,10 @@ Create a new contact.
 Missing name → 422**
 
 
-**Invalid email → 422
+**Invalid email → 422**
 
 
-Duplicate email → 409**
+**Duplicate email → 409**
 
 
 
