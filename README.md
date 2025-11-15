@@ -7,6 +7,7 @@ pip install fastapi uvicorn pydantic email-validator
 
 **2. Start the API server**
 From the project root:
+
 uvicorn crm_api.main:app --reload --host 0.0.0.0 --port 8000
 
 This automatically creates contacts.db if it does not exist.
