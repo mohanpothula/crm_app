@@ -4,32 +4,32 @@ A simple CRM backend built using FastAPI and SQLite.
 1. Install dependencies
 pip install fastapi uvicorn pydantic email-validator
 
-2. Start the API server
+**2. Start the API server**
 From the project root:
 uvicorn crm_api.main:app --reload --host 0.0.0.0 --port 8000
 
 This automatically creates contacts.db if it does not exist.
-3. Open API documentation
+**3. Open API documentation**
 Visit:
 http://localhost:8000/docs
 
 
-Implemented Endpoints
+**Implemented Endpoints**
 
 POST /contacts
 Create a new contact.
-Validations:
-Missing name → 422
+**Validations:
+Missing name → 422**
 
 
-Invalid email → 422
+**Invalid email → 422
 
 
-Duplicate email → 409
+Duplicate email → 409**
 
 
 
-GET /contacts
+**GET /contacts**
 List contacts.
 Query params supported:
 company=Acme
@@ -48,7 +48,7 @@ order=asc|desc
 
 
 
-GET /contacts/{id}
+**GET /contacts/{id}**
 Retrieve a single contact by ID.
 404 if not found
 
@@ -63,7 +63,7 @@ Delete a contact.
 
 
 
-Example Requests
+**Example Requests**
 Create contact
 curl -X POST http://localhost:8000/contacts \
   -H "Content-Type: application/json" \
