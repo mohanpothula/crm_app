@@ -11,14 +11,18 @@ From the project root:
 uvicorn crm_api.main:app --reload --host 0.0.0.0 --port 8000
 
 This automatically creates contacts.db if it does not exist.
+
 **3. Open API documentation**
+
 Visit:
+
 http://localhost:8000/docs
 
 
 **Implemented Endpoints**
 
 POST /contacts
+
 Create a new contact.
 **Validations:
 Missing name → 422**
@@ -32,6 +36,7 @@ Duplicate email → 409**
 
 
 **GET /contacts**
+
 List contacts.
 Query params supported:
 company=Acme
@@ -66,15 +71,16 @@ Delete a contact.
 
 
 **Example Requests**
+
 Create contact
 curl -X POST http://localhost:8000/contacts \
   -H "Content-Type: application/json" \
   -d '{"name":"Alice","email":"alice@test.com"}'
 
-List contacts
+**List contacts**
 curl "http://localhost:8000/contacts?limit=5&offset=0&sort_by=name&order=asc"
 
-Filter by company
+**Filter by company**
 curl "http://localhost:8000/contacts?company=Acme"
 
 Get contact
