@@ -1,6 +1,7 @@
 **CRM Contacts API**
 A simple CRM backend built using FastAPI and SQLite.
 ** How to Run**
+
 **1. Install dependencies**
 pip install fastapi uvicorn pydantic email-validator
 
